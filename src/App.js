@@ -69,8 +69,6 @@ function App() {
             {routes.map((route) => {
               const Page = route.page
               const isAuthorized = user.isAdmin || !route.isPrivate;
-              
-              console.log("checkad",isAuthorized)
         
               const Layout = route.isShowHeader ? DefaultComponent : Fragment
               return (
